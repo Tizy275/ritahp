@@ -1,0 +1,39 @@
+/* index.css */
+
+/* === CSS Reset / Normalize === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Grundlegende Schriftart und Layout === */
+body {
+  font-family: 'Alpino-Variable', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Standard für Links === */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Bilder passen sich dem Container an === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Root-Container für React === */
+#root {
+  isolation: isolate;
+}
