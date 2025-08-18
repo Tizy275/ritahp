@@ -30,34 +30,42 @@ function App() {
             </section>
 
             {/* Sektion: Home */}
-            <section id="home" className='home-section'>
-                <div className='home-overlay'>
+            <section id="home" className="home-section">
+                <div className="home-overlay">
                     <div className="home1">
-                        <div className='home-intro-text'><h2>„Wege entstehen, indem man sie geht“</h2>
+                        <div className="home-intro-text">
+                            <h2>„Wege entstehen, indem man sie geht“</h2>
                             <h3>
-                                Wenn Du Dich selbst besser kennen lernen willst, können wir über einen gemeinsamen Weg step by step eine Vision für Dich erarbeiten.
+                                Wenn Du Dich selbst besser kennen lernen willst, können wir über einen
+                                gemeinsamen Weg step by step eine Vision für Dich erarbeiten.
                             </h3>
-                            <h1>Ich kann Dir helfen, wenn folgende oder andere Probleme Deinen Alltag belasten</h1>
+                            <h1>
+                                Ich kann Dir helfen, wenn folgende oder andere Probleme Deinen Alltag
+                                belasten
+                            </h1>
                         </div>
+
+                        {/* Problem-Listen */}
                         <div className="problem-list">
                             <div className="column">
-                                <h3>
-                                    - Schlafstörungen<br />
-                                    - Prüfungsangst<br />
-                                    - Neue berufliche Orientierung<br />
-                                    - Unerfüllter Kinderwunsch<br />
-                                    - Partnerschaft, Autonomie und Nähe. Wie komme ich klar?<br />
-                                    - Wie gestalte ich ein erfülltes Leben nach einer Trennung?
-                                </h3>
+                                <ul>
+                                    <li>Schlafstörungen</li>
+                                    <li>Prüfungsangst</li>
+                                    <li>Neue berufliche Orientierung</li>
+                                    <li>Unerfüllter Kinderwunsch</li>
+                                    <li>Partnerschaft, Autonomie und Nähe. Wie komme ich klar?</li>
+                                    <li>Wie gestalte ich ein erfülltes Leben nach einer Trennung?</li>
+                                </ul>
                             </div>
+
                             <div className="column">
-                                <h3>
-                                    - Allgemeiner Stress im Leben<br />
-                                    - Körperliche Verspannungen<br />
-                                    - Depressive Verstimmungen<br />
-                                    - Kraftlosigkeit, Energieverlust<br />
-                                    - Schamanische Hausreinigung<br />
-                                </h3>
+                                <ul>
+                                    <li>Allgemeiner Stress im Leben</li>
+                                    <li>Körperliche Verspannungen</li>
+                                    <li>Depressive Verstimmungen</li>
+                                    <li>Kraftlosigkeit, Energieverlust</li>
+                                    <li>Schamanische Hausreinigung</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -138,8 +146,8 @@ function App() {
                                 Zuerst führen wir zum Kennenlernen natürlich ein kostenloses Estgespräch durch.
                             </p>
                             <p>
-                                <b>Termine nach Absprache telefonisch oder per E-Mail<br /><br />
-                                    Kosten: 150 Euro Energieausgleich bei Behandlung </b>
+                                <span className="highlighted-text-termine">Termine nach Absprache telefonisch oder per E-Mail<br />
+                                    Kosten: 150 Euro Energieausgleich bei Behandlung</span>
                             </p>
                         </div>
                     </div>

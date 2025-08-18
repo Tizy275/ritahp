@@ -90,7 +90,7 @@ section:not(#home) {
   object-fit: cover;
 }
 
-#home {
+/*#home {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -98,7 +98,7 @@ section:not(#home) {
   padding: 0 1rem 0 1rem;
   margin: 0 auto;
   background-color: #f8f8f8;
-}
+}*/
 
 .home-overlay {
   padding: 40px;
@@ -112,7 +112,7 @@ section:not(#home) {
   box-sizing: border-box;
   padding: 3rem 2rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -120,6 +120,7 @@ section:not(#home) {
   text-align: center;
   max-width: 800px;
   line-height: 1.6;
+  margin: 0 auto;
 }
 
 .home1 h2 {
@@ -138,17 +139,16 @@ section:not(#home) {
   margin-bottom: 1rem;
 }
 
+/* === Problem-List Layout === */
 .problem-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .problem-list .column {
-  flex: 1 1 300px;
-  max-width: 400px;
   text-align: left;
 }
 
@@ -308,6 +308,12 @@ section:not(#home) {
   color: #000; /* Optional für stärkere Betonung */
 }
 
+.highlighted-text-termine {
+  font-size: clamp(1.2rem, 1vw, 1.6rem);
+  font-weight: bold;
+  color: #000; /* Optional für stärkere Betonung */
+}
+
 .footer {
   background-color: rgba(185, 211, 241, 0.5);
   padding: 30px 40px;
@@ -386,40 +392,23 @@ section:not(#home) {
   .home1 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .home-intro-text {
     text-align: center;
   }
 
-  .home-intro-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .home-intro-text h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  .home-intro-text h1 {
-    font-size: 1.2rem;
-    margin: 2rem 0 1rem;
-  }
-}
-/* === Responsive Problem-List Sektion === */
-@media (max-width: 768px) {
   .problem-list {
-    flex-direction: column;
+    grid-template-columns: 1fr; /* alles untereinander */
     gap: 1rem;
-    align-items: center;
   }
 
   .problem-list .column {
     text-align: center;
   }
 }
+
 /* === Responsive About Section === */
 @media (max-width: 768px) {
   .about-overlay {
