@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           <span><i className="bi bi-telephone"></i> 0177 2150910</span>
         </div>
         <div className="footer-contact">
-          <span>📧 ritarist@googlemail.com</span>
+          <span><i className="bi bi-envelope"></i> ritarist@googlemail.com</span>
         </div>
       </div>
       <div className="footer-right">
