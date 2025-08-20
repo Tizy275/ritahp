@@ -67,16 +67,6 @@ section:not(#home) {
   object-fit: cover;
 }
 
-/*#home {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem 0 1rem;
-  margin: 0 auto;
-  background-color: #f8f8f8;
-}*/
-
 .home-overlay {
   padding: 40px;
   max-width: 1000px;
@@ -147,6 +137,7 @@ section:not(#home) {
   z-index: 0;
 }
 
+/* Allgemeines Overlay-Layout */
 .about-overlay {
   position: relative;
   z-index: 1;
@@ -162,7 +153,21 @@ section:not(#home) {
   flex-wrap: wrap;
   border-style: groove;
   border-color: rgba(185, 211, 241, 0.1);
-  border-radius: 1rem; /* optional für schöneren Look */
+  border-radius: 1rem;
+  box-sizing: border-box; /* wichtig, damit Padding nicht überläuft */
+}
+
+/* Bild innerhalb des Overlays */
+.about-image {
+  width: 200px; /* Desktop-Standardgröße */
+  flex-shrink: 0; /* Bild nicht schrumpfen lassen */
+}
+
+/* Textbereich */
+.about-intro {
+  flex: 1 1 0; /* flexibel, füllt verbleibenden Platz */
+  min-width: 200px; /* verhindert zu kleine Breite */
+  box-sizing: border-box;
 }
 
 /* Highlight-Zeile unter Intro */
@@ -347,12 +352,14 @@ section:not(#home) {
   }
 }
 
-/* === Responsive Anpassungen === */
+/* === Responsive Anpassungen About Section=== */
 @media (max-width: 768px) {
   .about-overlay {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    gap: 20px;
   }
 
   .about-image {
@@ -361,7 +368,8 @@ section:not(#home) {
   }
 
   .about-intro {
-    text-align: center;
+    width: 100%;      /* volle Breite innerhalb des Containers */
+    max-width: 600px; /* optional für bessere Lesbarkeit */
   }
 }
 
