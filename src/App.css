@@ -1,0 +1,43 @@
+/* App.css */
+
+/* Schriftart einbinden */
+@font-face {
+  font-family: "Alpino-Variable";
+  src: url("./assets/fonts/Alpino-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Globale Basis-Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alpino-Variable", sans-serif;
+  background-color: #fff; /* optional: Standard-Hintergrundfarbe */
+  color: #000; /* optional: Standard-Textfarbe */
+  line-height: 1.6;
+}
+
+/* Links standardisieren */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Bilder responsiv machen */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: Container-Klasse für zentrierten Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Footer() {

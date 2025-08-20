@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alpino-Variable";
-  src: url("./assets/fonts/Alpino-Variable.ttf") format("truetype");
+  src: url("./assets/fonts/Alpino-Variable.ttf");
   font-weight: normal;
   font-style: normal;
 }
