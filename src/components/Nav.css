@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Alpino-Variable";
+  src: url("./assets/fonts/Alpino-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+body {
+  margin: 0;
+  font-family: "Alpino-Variable", Arial, sans-serif;
+  padding-top: 60px;
+  font-size: 1rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  gap: 60px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alpino-Variable", Arial, sans-serif;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive Anpassungen=== */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+  }
+}

@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "Alpino-Variable";
+  src: url("./assets/fonts/Alpino-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+body {
+  margin: 0;
+  font-family: "Alpino-Variable", Arial, sans-serif;
+  padding-top: 60px;
+  font-size: 1rem;
+}
+
+section {
+  padding: 100px 20px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+}
+
+section:not(#home) {
+  padding: 100px 20px;
+}
+
+.header-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-section picture,
+.header-section img.header-image {
+  position: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.logo-image-wrapper {
+  flex: 0 0 auto;
+}
+
+.logo-image {
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/*#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}*/
+
+.home-overlay {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home1 {
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.home1 h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.home1 h1 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin: 2rem 0 1rem;
+}
+
+.home1 h3,
+.problem-list h3 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 1rem;
+}
+
+/* === Problem-List Layout === */
+.problem-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.problem-list .column {
+  text-align: left;
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hintergrundbild full-width/full-height */
+.about-bg,
+.about-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-overlay {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(185, 211, 241, 0.5);
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-style: groove;
+  border-color: rgba(185, 211, 241, 0.1);
+  border-radius: 1rem; /* optional für schöneren Look */
+}
+
+/* Highlight-Zeile unter Intro */
+.highlight-about {
+  width: 100%;
+  text-align: center;
+}
+
+.highlighted-text-about {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.about-image-wrapper {
+  flex: 0 0 auto;
+}
+
+.about-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-intro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-intro h2 {
+  color: #1a1a1a;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-bottom: 10px;
+}
+
+.about-intro p,
+.about-qualifications li {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 15px;
+}
+
+/* Zweites Overlay (Qualifikationen) */
+.about-overlay-qualifications {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+.about-qualifications {
+  margin-top: 30px;
+}
+
+.about-qualifications h3 {
+  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-qualifications ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.highlighted-text-qualifications {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: bold;
+  color: #000;
+}
+
+
+.prices-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hintergrund-Bild im Vollformat */
+.prices-bg,
+.prices-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Text-Overlay oben drüber */
+.prices-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background: rgba(255, 255, 255, 0.7); /* halbtransparent für bessere Lesbarkeit */
+  border-radius: 1rem; /* optional, wirkt edler */
+}
+
+.prices-header {
+  max-width: 768px;
+  width: 100%;
+}
+
+.prices-block p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.highlighted-text-prices {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: bold;
+  color: #000;
+}
+
+.highlighted-text-termine {
+  font-size: clamp(1.2rem, 1vw, 1.6rem);
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  /* === HEADER-BEREICH === */
+  .header-overlay {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-text {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .home1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home-intro-text {
+    text-align: center;
+  }
+
+  .problem-list {
+    grid-template-columns: 1fr; /* alles untereinander */
+    gap: 1rem;
+  }
+
+  .problem-list .column {
+    text-align: center;
+  }
+}
+
+/* === Responsive Anpassungen === */
+@media (max-width: 768px) {
+  .about-overlay {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+
+  .about-intro {
+    text-align: center;
+  }
+}
+
+/* === Responsive Prices Section === */
+@media (max-width: 768px) {
+  .prices-overlay {
+    padding: 2rem 1rem;
+  }
+
+  .prices-block p {
+    font-size: 1rem;
+  }
+}
