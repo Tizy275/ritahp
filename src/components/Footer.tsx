@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-left">
         <h3><b>Kontakt</b></h3>
         <div className="footer-contact">
-          <span>📞 0177 2150910</span>
+          <span><i className="bi bi-telephone"></i> 0177 2150910</span>
         </div>
         <div className="footer-contact">
           <span>📧 ritarist@googlemail.com</span>
