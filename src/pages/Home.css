@@ -350,10 +350,10 @@ section:not(#home) {
     text-align: center;
   }
 
-  .problem-list {
-    grid-template-columns: 1fr; /* alles untereinander */
+  /*.problem-list {
+    grid-template-columns: 1fr; 
     gap: 1rem;
-  }
+  }*/
 
   .problem-list .column {
     text-align: center;
