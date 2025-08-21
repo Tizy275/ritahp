@@ -58,7 +58,7 @@ section:not(#home) {
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
-}*/
+}
 
 .logo-image-wrapper {
   flex: 0 0 auto;
@@ -69,10 +69,10 @@ section:not(#home) {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-}
+}*/
 
 .home-overlay {
-  padding: 40px;
+
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -81,7 +81,7 @@ section:not(#home) {
   width: 100%;
   min-height: 100%;
   box-sizing: border-box;
-  padding: 3rem 2rem;
+  /*padding: 3rem 2rem;*/
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -112,20 +112,15 @@ section:not(#home) {
 
 /* === Problem-List Layout === */
 .problem-list {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
-  gap: 1.5rem;
   margin-top: 2rem;
   width: 100%;
 }
 
 .problem-list ul {
   list-style: none; /* entfernt die Bulletpoints */
-  /*padding-left: 0;   entfernt den linken Abstand */
-  /* margin-left: 0;    optional, um alle Einrückungen wegzubekommen */
-}
-.problem-list .column {
-  text-align: center;
+  padding-left: 0;  /* optional: linken Abstand komplett entfernen */
+  margin-left: 0;   /* optional: sicherstellen, dass nichts eingerückt ist */
+  text-align: center; /* zentriert den Text, falls gewünscht */
 }
 
 .about-section {
@@ -350,14 +345,18 @@ section:not(#home) {
     text-align: center;
   }
 
-  /*.problem-list {
-    grid-template-columns: 1fr; 
-    gap: 1rem;
-  }*/
+.problem-list {
+  margin-top: 2rem;
+  width: 100%;
+}
 
-  .problem-list .column {
-    text-align: center;
-  }
+.problem-list ul {
+  list-style: none; /* entfernt die Bulletpoints */
+  padding-left: 0;  /* optional: linken Abstand komplett entfernen */
+  margin-left: 0;   /* optional: sicherstellen, dass nichts eingerückt ist */
+  text-align: center; /* zentriert den Text, falls gewünscht */
+}
+
 
 }
 
