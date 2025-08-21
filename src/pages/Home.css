@@ -346,7 +346,7 @@ section:not(#home) {
   }
 
 .problem-list {
-  margin-top: 2rem;
+  margin-top: 0rem;
   width: 100%;
 }
 
