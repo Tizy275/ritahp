@@ -367,7 +367,7 @@ section:not(#home) {
     align-items: center; /* zentriert Kinder horizontal */
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     gap: 20px;
   }
 
