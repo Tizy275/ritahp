@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alpino-Variable";
-  src: url("./assets/fonts/Alpino-Variable.ttf"); 
+  src: url("./assets/fonts/Alpino-Variable.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,8 +34,10 @@ section:not(#home) {
 
 .header-section {
   position: relative;
-  width: 100vw;     /* volle Viewport-Breite */
-  margin-left: calc(-50vw + 50%); /* Trick, um aus evtl. zentriertem Container auszubrechen */
+  width: 100vw; /* volle Viewport-Breite */
+  margin-left: calc(
+    -50vw + 50%
+  ); /* Trick, um aus evtl. zentriertem Container auszubrechen */
   overflow: hidden;
 }
 
@@ -45,7 +47,6 @@ section:not(#home) {
   width: 100%;
   height: auto;
 }
-
 
 /*.header-overlay {
   position: relative;
@@ -117,9 +118,11 @@ section:not(#home) {
   margin-top: 2rem;
   width: 100%;
 }
-
-.problem-list .column {
+.problem-list .column1 {
   text-align: left;
+}
+.problem-list .column2 {
+  text-align: right;
 }
 
 .about-section {
@@ -247,7 +250,6 @@ section:not(#home) {
   color: #000;
 }
 
-
 .prices-section {
   position: relative;
   width: 100%;
@@ -350,8 +352,12 @@ section:not(#home) {
     gap: 1rem;
   }
 
-  .problem-list .column {
-    text-align: center;
+  .problem-list .column1 {
+    text-align: justify;
+  }
+
+  .problem-list .column2 {
+    text-align: justify;
   }
 }
 
@@ -359,8 +365,8 @@ section:not(#home) {
 @media (max-width: 768px) {
   .about-overlay {
     flex-direction: column;
-    align-items: center;   /* zentriert Kinder horizontal */
-    justify-content: center; 
+    align-items: center; /* zentriert Kinder horizontal */
+    justify-content: center;
     text-align: center;
     padding: 20px;
     gap: 20px;
@@ -372,15 +378,14 @@ section:not(#home) {
   }
 
   .about-intro {
-    flex: 0 1 auto;   /* verhindert, dass das Element den ganzen Platz beansprucht */
+    flex: 0 1 auto; /* verhindert, dass das Element den ganzen Platz beansprucht */
     min-width: unset; /* entfernt die starre Mindestbreite */
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;   /* zentriert den Block */
+    margin: 0 auto; /* zentriert den Block */
     text-align: center;
   }
 }
-
 
 /* === Responsive Prices Section === */
 @media (max-width: 768px) {

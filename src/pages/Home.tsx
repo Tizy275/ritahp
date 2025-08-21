@@ -49,7 +49,7 @@ export default function Home() {
 
                         {/* Problem-Listen */}
                         <div className="problem-list">
-                            <div className="column">
+                            <div className="column1">
                                 <ul>
                                     <li>Schlafstörungen</li>
                                     <li>Prüfungsangst</li>
@@ -61,7 +61,7 @@ export default function Home() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="column">
+                            <div className="column2">
                                 <ul>
                                     <li>Allgemeiner Stress im Leben</li>
                                     <li>Körperliche Verspannungen</li>
