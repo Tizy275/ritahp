@@ -352,8 +352,8 @@ section:not(#home) {
 
 .problem-list ul {
   list-style: none; /* entfernt die Bulletpoints */
-  padding-left: 0;  /* optional: linken Abstand komplett entfernen */
-  margin-left: 0;   /* optional: sicherstellen, dass nichts eingerückt ist */
+  /*padding-left: 0;   optional: linken Abstand komplett entfernen */
+  /*margin-left: 0;    optional: sicherstellen, dass nichts eingerückt ist */
   text-align: center; /* zentriert den Text, falls gewünscht */
 }
 
