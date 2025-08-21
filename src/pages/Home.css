@@ -17,47 +17,59 @@ body {
   font-size: 1rem;
 }
 
+/* Höhe deiner Navbar */
+:root {
+  --navbar-height: 60px; /* passe ggf. an */
+}
+
+/* Grundlayout für Sections */
 section {
-  padding: 100px 20px;
+  padding: 50px 0;
   background-color: #f7f7f7;
-  border-top: 1px solid #ddd;
+  box-sizing: border-box;
 }
 
+/* Alle Sections außer Home */
 section:not(#home) {
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
 
+/* Home-Seite */
 .home-page {
   margin: 0;
   padding: 0;
 }
 
+/* Header-Bereich */
 .header-section {
-  position: relative;
-  width: 100vw; /* volle Viewport-Breite */
-  margin-left: calc(
-    -50vw + 50%
-  ); /* Trick, um aus evtl. zentriertem Container auszubrechen */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   overflow: hidden;
+  padding: 0;
+  padding-top: var(--navbar-height); /* Platz für Navbar schaffen */
+  box-sizing: border-box;
+  position: relative;
 }
 
+/* Bilder im Header */
 .header-section picture,
 .header-section img.header-image {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
-/*.header-overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
+/* Overlay / Text im Header */
+.header-overlay {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-image-wrapper {
@@ -69,10 +81,8 @@ section:not(#home) {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-}*/
-
-.home-overlay {
-
+}
+*/ .home-overlay {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -118,8 +128,8 @@ section:not(#home) {
 
 .problem-list ul {
   list-style: none; /* entfernt die Bulletpoints */
-  padding-left: 0;  /* optional: linken Abstand komplett entfernen */
-  margin-left: 0;   /* optional: sicherstellen, dass nichts eingerückt ist */
+  padding-left: 0; /* optional: linken Abstand komplett entfernen */
+  margin-left: 0; /* optional: sicherstellen, dass nichts eingerückt ist */
   text-align: center; /* zentriert den Text, falls gewünscht */
 }
 
@@ -155,9 +165,9 @@ section:not(#home) {
   align-items: flex-start;
   gap: 30px;
   flex-wrap: wrap;
+  border-radius: 0;
   border-style: groove;
   border-color: rgba(185, 211, 241, 0.1);
-  border-radius: 1rem;
   box-sizing: border-box;
 }
 
@@ -224,7 +234,7 @@ section:not(#home) {
   padding: 40px;
   max-width: 1000px;
   margin: 2rem auto;
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 .about-qualifications {
@@ -307,7 +317,9 @@ section:not(#home) {
 }
 
 @media (max-width: 768px) {
-  /* === HEADER-BEREICH === */
+  .header-section {
+    padding-top: calc(var(--navbar-height) + 10px);
+  }
   .header-overlay {
     padding: 2rem 1rem;
     flex-direction: column;
@@ -328,6 +340,11 @@ section:not(#home) {
   .header-text p {
     font-size: 1rem;
   }
+
+  /* Optional: Header-Padding nach Navbar auf Mobile anpassen */
+  .header-section {
+    padding-top: calc(var(--navbar-height) + 10px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -345,19 +362,17 @@ section:not(#home) {
     text-align: center;
   }
 
-.problem-list {
-  margin-top: 0rem;
-  width: 100%;
-}
+  .problem-list {
+    margin-top: 0rem;
+    width: 100%;
+  }
 
-.problem-list ul {
-  list-style: none; /* entfernt die Bulletpoints */
-  /*padding-left: 0;   optional: linken Abstand komplett entfernen */
-  /*margin-left: 0;    optional: sicherstellen, dass nichts eingerückt ist */
-  text-align: center; /* zentriert den Text, falls gewünscht */
-}
-
-
+  .problem-list ul {
+    list-style: none; /* entfernt die Bulletpoints */
+    /*padding-left: 0;   optional: linken Abstand komplett entfernen */
+    /*margin-left: 0;    optional: sicherstellen, dass nichts eingerückt ist */
+    text-align: center; /* zentriert den Text, falls gewünscht */
+  }
 }
 
 /* === Responsive Anpassungen About Section=== */
@@ -367,7 +382,13 @@ section:not(#home) {
     align-items: center; /* zentriert Kinder horizontal */
     justify-content: center;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .about-overlay-qualifications {
+    flex-direction: column;
+    padding: 10px;
     gap: 20px;
   }
 
@@ -381,7 +402,7 @@ section:not(#home) {
     min-width: unset; /* entfernt die starre Mindestbreite */
     width: 100%;
     max-width: 600px;
-    margin: 0 auto; /* zentriert den Block */
+    margin: 20 auto; /* zentriert den Block */
     text-align: center;
   }
 }
