@@ -359,8 +359,8 @@ section:not(#home) {
 @media (max-width: 768px) {
   .about-overlay {
     flex-direction: column;
-    align-items: center;  /* zentriert Kinder horizontal */
-    justify-content: center; /* optional für vertikale Zentrierung, falls nötig */
+    align-items: center;   /* zentriert Kinder horizontal */
+    justify-content: center; 
     text-align: center;
     padding: 20px;
     gap: 20px;
@@ -372,12 +372,15 @@ section:not(#home) {
   }
 
   .about-intro {
+    flex: 0 1 auto;   /* verhindert, dass das Element den ganzen Platz beansprucht */
+    min-width: unset; /* entfernt die starre Mindestbreite */
     width: 100%;
     max-width: 600px;
-    margin: 0 auto; /* zentriert den Textblock innerhalb des Containers */
+    margin: 0 auto;   /* zentriert den Block */
     text-align: center;
   }
 }
+
 
 /* === Responsive Prices Section === */
 @media (max-width: 768px) {
