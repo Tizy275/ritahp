@@ -49,20 +49,14 @@ export default function Home() {
 
                         {/* Problem-Listen */}
                         <div className="problem-list">
-                            <div className="column1">
+                            <div className="column">
                                 <ul>
                                     <li>Schlafstörungen</li>
                                     <li>Prüfungsangst</li>
                                     <li>Neue berufliche Orientierung</li>
                                     <li>Unerfüllter Kinderwunsch</li>
                                     <li>Partnerschaft, Autonomie und Nähe. Wie komme ich klar?</li>
-                                    <li>
-                                        Wie gestalte ich ein erfülltes Leben nach einer Trennung?
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="column2">
-                                <ul>
+                                    <li>Wie gestalte ich ein erfülltes Leben nach einer Trennung?</li>
                                     <li>Allgemeiner Stress im Leben</li>
                                     <li>Körperliche Verspannungen</li>
                                     <li>Depressive Verstimmungen</li>

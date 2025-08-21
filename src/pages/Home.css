@@ -113,16 +113,19 @@ section:not(#home) {
 /* === Problem-List Layout === */
 .problem-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
   gap: 1.5rem;
   margin-top: 2rem;
   width: 100%;
 }
-.problem-list .column1 {
-  text-align: left;
+
+.problem-list ul {
+  list-style: none; /* entfernt die Bulletpoints */
+  /*padding-left: 0;   entfernt den linken Abstand */
+  /* margin-left: 0;    optional, um alle Einrückungen wegzubekommen */
 }
-.problem-list .column2 {
-  text-align: right;
+.problem-list .column {
+  text-align: center;
 }
 
 .about-section {
@@ -352,13 +355,10 @@ section:not(#home) {
     gap: 1rem;
   }
 
-  .problem-list .column1 {
+  .problem-list .column {
     text-align: justify;
   }
 
-  .problem-list .column2 {
-    text-align: justify;
-  }
 }
 
 /* === Responsive Anpassungen About Section=== */
