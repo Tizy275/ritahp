@@ -22,6 +22,12 @@ body {
   line-height: 1.6;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Links standardisieren */
 a {
   text-decoration: none;
