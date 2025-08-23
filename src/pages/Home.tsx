@@ -39,7 +39,7 @@ export default function Home() {
                             <h2>„Wege entstehen, indem man sie geht“</h2>
                             <h3>
                                 Wenn Du Dich selbst besser kennen lernen willst,
-                                können wir über einen gemeinsamen Weg step by step eine Vision für Dich erarbeiten.
+                                können wir über einen gemeinsamen Weg step by step eine Vision für Dich erarbeiten
                             </h3>
                             <h1>
                                 Ich kann Dir helfen, wenn folgende oder andere Probleme Deinen Alltag
@@ -60,7 +60,7 @@ export default function Home() {
                                 <li>Körperliche Verspannungen</li>
                                 <li>Depressive Verstimmungen</li>
                                 <li>Kraftlosigkeit, Energieverlust</li>
-                                <li>Schamanische Hausreinigung</li>
+                                <li>Reinigung von Fremdenergien u.A. Schamanische Hausreinigung</li>
                             </ul>
                         </div>
 
@@ -86,7 +86,7 @@ export default function Home() {
                         <h2>
                             Ich bin Rita und gemeinsam
                             <br />
-                            können wir für Dich neue Perspektiven entwickeln.
+                            können wir für Dich neue Perspektiven entwickeln
                         </h2>
                         <p>
                             In meiner Praxis berate ich Dich mit meinen umfassenden Kenntnissen aus dem therapeutischen, heilerischen und naturheilkundlichen Bereich,
@@ -130,10 +130,11 @@ export default function Home() {
                             <li>2. Grad Reiki</li>
                             <li>
                                 Ausbildung zur schamanischen Heilerin bei Reinhard Stengel
-                                („Rainbowman“) an der Akademie für Seelenschamanismus.
+                                („Rainbowman“) an der Akademie für Seelenschamanismus.<br/>
+                                Reinhard Stengel vermittelt Lehrinhalte und Heilweisen der nordamerikanischen Indianer und Bruno Gröning (Geistheilung)
                             </li>
                             <li>
-                                Erlernen von Entspannungsverfahren (Autogenes Training, Progressive
+                                Erlernen von unterschiedlichen Entspannungsverfahren (Autogenes Training, Progressive
                                 Muskelrelaxation) und fernöstlichen Meditationstechniken, sowie
                                 Traumaarbeit
                             </li>
@@ -167,9 +168,12 @@ export default function Home() {
                                 <span className="highlighted-text-prices">
                                     Schamanische Heilarbeit unterstützt dich,
                                 </span>
-                                mit deinen Selbsteheilungskräften in Kontakt zu kommen und vermittelt
+                                 mit deinen Selbstheilungskräften in Kontakt zu kommen und vermittelt
                                 Techniken zur Heilung und Selbstheilung (Meditation, Krafttierreisen),
-                                die individuell auf Dich zugeschnitten werden.
+                                die individuell auf Dich zugeschnitten werden. Durch Lösen von Energieblockaden 
+                                heben sich negative Energien auf.<br/>
+                                Psychische und physiche Belastungen und Symptome lösen sich und verschwinden aus 
+                                Deinem System, so dass Deine Lebensenergie und deine Kreativität wieder frei fließen können.
                             </p>
                             <p>
                                 Die Behandlungen können in Präsenz in <b>München</b> oder als{" "}
@@ -180,7 +184,7 @@ export default function Home() {
                                 <span className="highlighted-text-termine">
                                     Termine nach Absprache telefonisch oder per E-Mail
                                     <br />
-                                    Kosten: 150 Euro Energieausgleich bei Behandlung
+                                    Kosten: 150 Euro Energieausgleich pro Behandlung
                                 </span>
                             </p>
                         </div>
