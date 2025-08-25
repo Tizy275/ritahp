@@ -166,9 +166,9 @@ export default function Home() {
                         <div className="prices-block">
                             <p>
                                 <span className="highlighted-text-prices">
-                                    Schamanische Heilarbeit unterstützt dich,
+                                    Schamanische Heilarbeit unterstützt dich,&nbsp;
                                 </span>
-                                 mit deinen Selbstheilungskräften in Kontakt zu kommen und vermittelt
+                                mit deinen Selbstheilungskräften in Kontakt zu kommen und vermittelt
                                 Techniken zur Heilung und Selbstheilung (Meditation, Krafttierreisen),
                                 die individuell auf Dich zugeschnitten werden. Durch Lösen von Energieblockaden 
                                 heben sich negative Energien auf.<br/>

@@ -46,15 +46,6 @@ section:not(#home) { padding: 50px 20px; }
   margin: 0;
 }
 
-/* Mobile Feinheiten – kein extra padding-top mehr */
-@media (max-width: 768px) {
-  .header-overlay { padding: 2rem 1rem; display: flex; flex-direction: column; align-items: center; }
-  .header-text { position: static; text-align: center; margin-top: 1rem; max-width: 100%; }
-  .header-text h1 { font-size: 2rem; }
-  .header-text p { font-size: 1rem; }
-}
-
-
 /* Overlay / Text im Header */
 /*.header-overlay {
   display: flex;
@@ -313,27 +304,12 @@ section:not(#home) { padding: 50px 20px; }
   color: #000;
 }
 
+/* Mobile Feinheiten – kein extra padding-top mehr */
 @media (max-width: 768px) {
-  .header-overlay {
-    padding: 2rem 1rem;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header-text {
-    position: static;
-    text-align: center;
-    margin-top: 1rem;
-    max-width: 100%;
-  }
-
-  .header-text h1 {
-    font-size: 2rem;
-  }
-
-  .header-text p {
-    font-size: 1rem;
-  }
+  .header-overlay { padding: 2rem 1rem; display: flex; flex-direction: column; align-items: center; }
+  .header-text { position: static; text-align: center; margin-top: 1rem; max-width: 100%; }
+  .header-text h1 { font-size: 2rem; }
+  .header-text p { font-size: 1rem; }
 }
 
 @media (max-width: 768px) {
