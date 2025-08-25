@@ -5,48 +5,40 @@
   font-style: normal;
 }
 
-html {
-  scroll-behavior: smooth;
-  font-size: clamp(14px, 1.5vw, 18px);
+:root {
+  /* Fallback; wird von JS oben überschrieben */
+  --navbar-height: 60px;
 }
 
-body {
-  margin: 0;
-  font-family: "Alpino-Variable", Arial, sans-serif;
+html { scroll-behavior: smooth; font-size: clamp(14px, 1.5vw, 18px); }
 
-  font-size: 1rem;
-}
+body { margin: 0; font-family: "Alpino-Variable", Arial, sans-serif; font-size: 1rem; }
 
 .nav {
-  position: fixed;
+  position: sticky;     /* <— statt fixed */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background: #fff;
   padding: 10px 0;
   gap: 60px;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
   font-size: 1rem;
 }
 
 .nav a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-family: "Alpino-Variable", Arial, sans-serif;
 }
+.nav a:hover { text-decoration: underline; }
 
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* === Responsive Anpassungen=== */
 @media (max-width: 768px) {
   .nav {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;

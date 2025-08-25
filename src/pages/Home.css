@@ -5,48 +5,34 @@
   font-style: normal;
 }
 
-html {
-  scroll-behavior: smooth;
-  font-size: clamp(14px, 1.5vw, 18px);
-}
+html { scroll-behavior: smooth; font-size: clamp(14px, 1.5vw, 18px); }
 
 body {
   margin: 0;
   font-family: "Alpino-Variable", Arial, sans-serif;
-  padding-top: 60px;
   font-size: 1rem;
 }
 
-/* Höhe deiner Navbar */
-:root {
-  --navbar-height: 60px; /* passe ggf. an */
-}
-
-/* Grundlayout für Sections */
-section {
+/* Beim Scrollen zu #about, #prices, #contact etc. wird oberhalb
+   Platz in Höhe der Navbar gelassen – funktioniert dank JS exakt. */
+section { 
+  scroll-margin-top: var(--navbar-height);
   padding: 50px 0;
   background-color: #f7f7f7;
   box-sizing: border-box;
 }
 
-/* Alle Sections außer Home */
-section:not(#home) {
-  padding: 50px 20px;
-}
+section:not(#home) { padding: 50px 20px; }
 
 /* Home-Seite */
-.home-page {
-  margin: 0;
-  padding: 0;
-}
+.home-page { margin: 0; padding: 0; }
 
 /* Header-Bereich */
 .header-section {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
-  padding: 0;
-  padding-top: var(--navbar-height); /* Platz für Navbar schaffen */
+  padding: 0;               /* <— kein top-Padding mehr nötig */
   box-sizing: border-box;
   position: relative;
 }
@@ -60,8 +46,17 @@ section:not(#home) {
   margin: 0;
 }
 
+/* Mobile Feinheiten – kein extra padding-top mehr */
+@media (max-width: 768px) {
+  .header-overlay { padding: 2rem 1rem; display: flex; flex-direction: column; align-items: center; }
+  .header-text { position: static; text-align: center; margin-top: 1rem; max-width: 100%; }
+  .header-text h1 { font-size: 2rem; }
+  .header-text p { font-size: 1rem; }
+}
+
+
 /* Overlay / Text im Header */
-.header-overlay {
+/*.header-overlay {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,7 +77,9 @@ section:not(#home) {
   border-radius: 8px;
   object-fit: cover;
 }
-*/ .home-overlay {
+*/ 
+
+.home-overlay {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -317,9 +314,6 @@ section:not(#home) {
 }
 
 @media (max-width: 768px) {
-  .header-section {
-    padding-top: calc(var(--navbar-height) + 10px);
-  }
   .header-overlay {
     padding: 2rem 1rem;
     flex-direction: column;
@@ -339,11 +333,6 @@ section:not(#home) {
 
   .header-text p {
     font-size: 1rem;
-  }
-
-  /* Optional: Header-Padding nach Navbar auf Mobile anpassen */
-  .header-section {
-    padding-top: calc(var(--navbar-height) + 10px);
   }
 }
 
