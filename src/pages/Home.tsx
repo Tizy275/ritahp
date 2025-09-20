@@ -143,7 +143,7 @@ export default function Home() {
                                 Erwachsenen
                             </li>
                             <li>
-                                Derzeit in Ausbildung bei Ralph Riedel, in die Tradition der Inka
+                                Ausbildung bei Ralph Riedel, in die Tradition der Inka
                                 und Schwarzfuß-Indianer
                             </li>
                         </ul>
@@ -185,6 +185,8 @@ export default function Home() {
                                     Termine nach Absprache telefonisch oder per E-Mail
                                     <br />
                                     Kosten: 150 Euro Energieausgleich pro Behandlung
+                                    <br />
+                                    Kostenfreies Kostenlerngespräch
                                 </span>
                             </p>
                         </div>
