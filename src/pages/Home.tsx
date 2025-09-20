@@ -186,7 +186,7 @@ export default function Home() {
                                     <br />
                                     Kosten: 150 Euro Energieausgleich pro Behandlung
                                     <br />
-                                    Kostenfreies Kostenlerngespräch
+                                    Kostenfreies Kennenlerngespräch
                                 </span>
                             </p>
                         </div>
