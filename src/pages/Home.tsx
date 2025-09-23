@@ -38,8 +38,7 @@ export default function Home() {
                         <div className="home-intro-text">
                             <h2>„Wege entstehen, indem man sie geht“</h2>
                             <h3>
-                                Wenn Du Dich selbst besser kennen lernen willst,
-                                können wir über einen gemeinsamen Weg step by step eine Vision für Dich erarbeiten
+                                Wenn Du Deine Ziele erreichen und Deine Visionen umsetzen willst, können wir step by step einen Weg für Dich erarbeiten
                             </h3>
                             <h1>
                                 Ich kann Dir helfen, wenn folgende oder andere Probleme Deinen Alltag
